@@ -1,3 +1,3 @@
-require("blakespiers.remap")
+require("blakespiers.keymaps")
 require("blakespiers.set")
-require("blakespiers.packer")
+require("blakespiers.lazy")
