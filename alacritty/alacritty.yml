@@ -53,6 +53,10 @@ window:
   #   - SimpleFullscreen
   startup_mode: Fullscreen
 
+font:
+  normal:
+    family: "MesloLGS NF"
+
 # Shell
 #
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
