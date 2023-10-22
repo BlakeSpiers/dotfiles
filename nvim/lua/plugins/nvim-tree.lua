@@ -1,3 +1,7 @@
+--[
+-- use g? to see mappings in nvim-tree
+--]
+
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
