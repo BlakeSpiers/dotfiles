@@ -13,6 +13,20 @@ return {
       "<leader>fg",
       "<cmd>Telescope live_grep<cr>",
       desc = "Find Grep"
+    },
+    {
+      "<leader>fb",
+      function()
+          require("telescope.builtin").buffers()
+      end,
+      desc = "Find Buffers"
+    },
+    {
+      "<leader>fh",
+      function()
+        require("telescope.builtin").help_tags()
+      end,
+      desc = "Find Help Tags"
     }
   }
 }
