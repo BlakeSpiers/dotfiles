@@ -6,7 +6,9 @@ install cmake
 
 ## Todo
 Lsp config
-Treesitter
-Snippets
+LuaSnip
 cmp (completion engine)
 TypescriptOrganiseImports
+Leap
+git-gutter
+lualine
