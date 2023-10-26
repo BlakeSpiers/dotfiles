@@ -12,3 +12,5 @@ TypescriptOrganiseImports
 Leap
 git-gutter
 lualine
+vim-tmux-navigator
+vim-maximizer
