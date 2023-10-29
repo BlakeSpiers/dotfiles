@@ -9,6 +9,6 @@ npm (ideally through nvm) -- for mason lsp auto installation
 TypescriptOrganiseImports
 Leap
 git-gutter
-lualine
 vim-tmux-navigator
 vim-maximizer
+bufferline
