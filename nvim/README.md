@@ -2,12 +2,10 @@
 
 ## Prerequisites 
 install [ripgrep](https://github.com/BurntSushi/ripgrep).
-install cmake
+install make or cmake
+npm (ideally through nvm) -- for mason lsp auto installation
 
 ## Todo
-Lsp config
-LuaSnip
-cmp (completion engine)
 TypescriptOrganiseImports
 Leap
 git-gutter
