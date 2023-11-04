@@ -13,6 +13,7 @@ return {
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
+		local builtin = require("telescope.builtin")
 
 		telescope.setup({
 			defaults = {
@@ -25,50 +26,74 @@ return {
 				},
 				layout_strategy = "vertical",
 			},
+
+			vim.keymap.set("n", "<leader>ff", function()
+				builtin.find_files()
+			end, { desc = "Find file (fuzzy)" }),
+
+			vim.keymap.set("n", "<leader>fr", function()
+				builtin.oldfiles()
+			end, { desc = "Find recent file (fuzzy)" }),
+
+			vim.keymap.set("n", "<leader>fs", function()
+				builtin.live_grep()
+			end, { desc = "Find string" }),
+
+			vim.keymap.set("n", "<leader>fc", function()
+				builtin.grep_string()
+			end, { desc = "Find string under cursor" }),
+
+			vim.keymap.set("n", "<leader>fb", function()
+				builtin.buffers()
+			end, { desc = "Find buffer" }),
+
+			vim.keymap.set("n", "<leader>fh", function()
+				builtin.help_tags()
+			end, { desc = "Find help tags" }),
 		})
 
 		telescope.load_extension("fzf")
 	end,
-	keys = {
-		{
-			"<leader>ff",
-			function()
-				require("telescope.builtin").find_files()
-			end,
-			desc = "Find file (fuzzy)",
-		},
-		{
-			"<leader>fr",
-			function()
-				require("telescope.builtin").oldfiles()
-			end,
-			desc = "Find recent files (fuzzy)",
-		},
-		{
-			"<leader>fs",
-			"<cmd>Telescope live_grep<cr>",
-			desc = "Find string",
-		},
-		{
-			"<leader>fc",
-			function()
-				require("telescope.builtin").grep_string()
-			end,
-			desc = "Find string under cursor",
-		},
-		{
-			"<leader>fb",
-			function()
-				require("telescope.builtin").buffers()
-			end,
-			desc = "Find buffers",
-		},
-		{
-			"<leader>fh",
-			function()
-				require("telescope.builtin").help_tags()
-			end,
-			desc = "Find help tags",
-		},
-	},
+	--keys = {
+	--	{
+	--		"<leader>ff",
+	--		function()
+	--			require("telescope.builtin").find_files()
+	--		end,
+	--		desc = "Find file (fuzzy)",
+	--	},
+	--	{
+	--		"<leader>fr",
+	--		function()
+	--			require("telescope.builtin").oldfiles()
+	--		end,
+	--		desc = "Find recent files (fuzzy)",
+	--	},
+	--	{
+	--		"<leader>fs",
+	--		"<cmd>Telescope live_grep<cr>",
+	--		desc = "Find string",
+	--	},
+	--	{
+	--		"<leader>fc",
+	--		function()
+	--			require("telescope.builtin").grep_string()
+	--		end,
+	--		desc = "Find string under cursor",
+	--	},
+	--	{
+	--		"<leader>fb",
+	--		function()
+	--			require("telescope.builtin").buffers()
+	--		end,
+	--		desc = "Find buffers",
+	--	},
+	--	{
+	--		"<leader>fh",
+	--		function()
+	--			require("telescope.builtin").help_tags()
+	--		end,
+	--		desc = "Find help tags",
+	--	},
+	--},
 }
