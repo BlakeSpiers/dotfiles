@@ -27,9 +27,23 @@ vim.opt.scrolloff = 8
 --vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 500
 
 --vim.opt.colorcolumn = "80"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- show info on hover
+--vim.api.nvim_create_autocmd("CursorHold", {
+--	callback = function()
+--		vim.lsp.buf.hover()
+--		--vim.lsp.buf.document_highlight()
+--	end,
+--})
+
+--vim.api.nvim_create_autocmd("CursorMoved", {
+--	callback = function()
+--		vim.cmd("noh")
+--	end,
+--})
