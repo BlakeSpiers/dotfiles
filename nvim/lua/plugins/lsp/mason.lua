@@ -35,8 +35,8 @@ return {
 				"cssls",
 				"tailwindcss",
 				"lua_ls",
-				"pyright",
-				"svelte",
+				--"pyright",
+				--"svelte",
 			},
 
 			-- auto-install configured servers (with lspconfig)
