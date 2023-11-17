@@ -11,6 +11,7 @@ return {
 				["rust-analyzer"] = {},
 			},
 		})
+        lspconfig.nil_ls.setup({}) -- Nix LS
 
 		-- Global mappings.
 		-- See `:help vim.diagnostic.*` for documentation on any of the below functions

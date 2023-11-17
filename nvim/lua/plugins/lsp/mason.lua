@@ -35,6 +35,7 @@ return {
 				"cssls",
 				"tailwindcss",
 				"lua_ls",
+                "nil_ls", -- Nix LS
 				--"pyright",
 				--"svelte",
 			},
