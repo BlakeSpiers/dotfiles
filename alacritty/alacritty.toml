@@ -1,0 +1,15 @@
+[font.normal]
+family = "MesloLGS NF"
+
+[window]
+decorations = "full"
+dynamic_padding = false
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 100
+lines = 85
+
+[window.padding]
+x = 0
+y = 0
